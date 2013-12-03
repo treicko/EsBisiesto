@@ -9,4 +9,11 @@ public class EsBisiesto {
 		return resp;
 	}
 
+	public boolean EsDivisibleEntre100(int anio) {
+		boolean resp=false;
+		if(anio%100==0)
+			resp=true;
+		return resp;
+	}
+
 }

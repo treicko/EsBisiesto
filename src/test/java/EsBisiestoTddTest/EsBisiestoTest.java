@@ -1,10 +1,12 @@
 package EsBisiestoTddTest;
 
+
+
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
-import junit.framework.TestCase;
-
-public class EsBisiestoTest extends TestCase {
+public class EsBisiestoTest {
 
 	@Test
 	public void DevuelveTrueSiElAnioEsDivisibleEntre4()
@@ -14,9 +16,10 @@ public class EsBisiestoTest extends TestCase {
 	}
 	
 	@Test
-	public void DevuelveTrueSiElAnioEsDivisibleEntre()
+	public void DevuelveTrueSiElAnioEsDivisibleEntre100()
 	{
-		assertEquals(true, true);
+		EsBisiesto bisiesto = new EsBisiesto();
+		assertEquals(true, bisiesto.EsDivisibleEntre4(1992));
 	}
 
 }
